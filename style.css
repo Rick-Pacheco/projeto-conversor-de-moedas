@@ -1,0 +1,104 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Roboto', sans-serif;
+    outline: none; /*linha azul que fica envolta do select e input */
+}
+
+body {
+    background-color: #8a51fc;
+}
+
+.logo {
+    width: 300px;
+    height: 300px;
+    display: block; /*utiliza-se para permitir margin left e right auto. E assim a imagem fica centralizada*/
+    margin: 20px auto;
+}
+
+main { 
+    /*por padrão, div, main, section - são display: block, então não é necessário declarar*/
+    margin:  0 auto 40px;
+    width: 375px;
+    background-color: #f4f4f4;
+    border-radius: 20px;
+    padding: 44px 24px 23px; /* 1)cima 2)lados 3)baixo*/
+
+}
+
+label {
+    color: #777777;
+    font-weight: 400px;
+    font-size: 14px;
+}
+
+select, input {
+    background-color: #ffffff;
+    border: 1 solid #bbbbbb;
+    border-radius: 4px;
+    height: 48px;
+    width: 100%; /* como temos o padding, ele não deixa estourar, pois o padding segura ele */
+    margin-bottom: 24px;
+    appearance: none; /*para sumir a seta ao lado do select*/
+    padding-left: 18px;
+    font-weight: 700px;
+    font-size: 16px;
+    color:#555555;
+    cursor: pointer;
+}
+
+button {
+    background-color: #772fd3;
+    border-radius: 5px;
+    width: 100%; /* como temos o padding, ele não deixa estourar, pois o padding segura ele */
+    border: none;
+    height: 48px;
+    color: #ffffff;
+    font-size: 18px;
+    font-weight: 700px;
+    cursor: pointer;
+}
+
+button:hover {
+    opacity: .8;
+}
+
+button:active {
+    opacity: .6;
+}
+
+section {
+    border: 1px solid #772fd3;
+    border-radius: 20px;
+    margin-top: 36px;
+    padding: 12px;
+    display: flex; /* pode escolher se os itens irão ficar um do lado do outro, ou acima do outro. */
+    flex-direction: column; /*para ficar um debaixo do outro - só acontece se o display for flex (row = linha)*/
+    align-items: center; /*também só acontece se o display for flex*/
+}
+
+.arrow-img {
+    margin: 15px 0;
+}
+
+.currency-box {
+    display: flex; /*por padrão, coloca um ítem do lado do outro*/
+    flex-direction: column;
+    align-items: center;
+    gap: 4px; /*distancia entre os ítens - só funciona com o displa:flex*/
+}
+
+.currency {
+    color: #777777;
+    font-size: 14px;
+}
+
+.currency-value, .currency-value-to-convert {
+    color: #555555;
+    font-size: 20px;
+    font-weight:700px;
+}
+
+
+
