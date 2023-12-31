@@ -7,9 +7,9 @@ function convertCurrency() {
     const pCurrencyValueToConvert = document.querySelector(".currency-value-to-convert")
     const pCurrencyValue = document.querySelector(".currency-value")
 
-    const dolarToday = 5.2
-    const euroToday = 6.2
-    const libraToday = 6.5
+    const dolarToday = 4.2
+    const euroToday = 5.2
+    const libraToday = 6.2
 
     //        (REFERÊNCIA ---  MOEDA REAL PARA TODOS!)
 
